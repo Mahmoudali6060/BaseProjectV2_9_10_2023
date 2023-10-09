@@ -11,7 +11,7 @@ import { LocalStorageService } from './shared/services/local-storage.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'canater';
+  title = 'base';
   typeSelected: string;
   constructor(private primengConfig: PrimeNGConfig,private translate: TranslateService,
     private localStorageService: LocalStorageService,

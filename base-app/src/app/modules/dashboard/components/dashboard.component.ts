@@ -24,7 +24,7 @@ export class DashboardComponent {
 
 	totalUsers: any;
 	totalRequests: number;
-	canaterRequestList: any;
+	baseRequestList: any;
 	totalInprogress: number;
 	inprogress: boolean;
 	noOfRequests: number = 0;

@@ -39,13 +39,13 @@
     "of": "of",
     "entries": "entries",
     "Search": "Search",
-    "Canater": "Canater",
-    "PleaseLetUsKnowIfYouWantToRequestACanater": "Please Let Us Know If You Want To Request A Canater",
+    "Base": "Base",
+    "PleaseLetUsKnowIfYouWantToRequestABase": "Please Let Us Know If You Want To Request A Base",
     "Ok": "Ok",
     "back": "Back"
     
   },
-  
+
   "Dashboard": {
     "overview": "Overview",
     "users": "Users",
@@ -170,7 +170,7 @@
     "CompanyType": "Company Type",
     "SelectCompanyType": "Select company type",
     "WelcomeTo": "Welcome To",
-    "Canater": "Canater",
+    "Base": "Base",
     "ReadMore": "Read More",
     "forgetPasswordMessage": "The link has been sent, please check your email to reset your password."
   },
@@ -311,7 +311,7 @@
     "inactive": "Inactive"
   },
 
-  "CanaterRequestStatusEnum": {
+  "BaseRequestStatusEnum": {
     "InProgress": "In Progress",
     "WaitingForCorrection": "Waiting for correction",
     "Approved": "Approved",
@@ -325,7 +325,7 @@
     "Trader": "Trader"
   },
   "landingPage": {
-    "RequestCanater": "Request Canater",
+    "RequestBase": "Request Base",
     "Search": "Search"
   },
   "userTypeEnum": {

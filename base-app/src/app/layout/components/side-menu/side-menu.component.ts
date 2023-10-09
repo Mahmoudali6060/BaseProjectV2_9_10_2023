@@ -68,7 +68,6 @@ export class SideMenuComponent implements OnInit {
   goToUrl(url: string, queryParams: string) {
     debugger;
     this.router.navigate([url], { queryParams: [queryParams], skipLocationChange: true });
-    this.router.navigate(['/canater-management/canater-request-list-my-inbox'], { queryParams: [this.authService?.loggedUserProfile?.id, RequestTypeEnum.Booking], skipLocationChange: true });
   }
   public logOut() {
     this.authService.logOut();

@@ -65,8 +65,8 @@
                 <div class="card-footer">
                     <div class="stats">
                         <i class="material-icons">
-                            <h5>{{canaterRequestTotalDetails.totalRequests}}</h5><span>Requests &nbsp;<a
-                                    [routerLink]="['/canater-management/canater-request-list']">{{'Dashboard.ReadMore' |
+                            <h5>{{baseRequestTotalDetails.totalRequests}}</h5><span>Requests &nbsp;<a
+                                    [routerLink]="['/base-management/base-request-list']">{{'Dashboard.ReadMore' |
                                     translate}}</a></span>
                         </i>
                     </div>
@@ -86,7 +86,7 @@
                     <p class="card-category">
                         <span class="text-success"><i
                                 class="fa fa-long-arrow-up"></i></span>{{'Dashboard.Selectsuitableoffertorequest' |
-                        translate}} <a [routerLink]="['/canater-management/shiping-offer-list']">{{'Dashboard.ReadMore'
+                        translate}} <a [routerLink]="['/base-management/shiping-offer-list']">{{'Dashboard.ReadMore'
                             | translate}}</a>
                     </p>
                 </div>
@@ -105,13 +105,13 @@
                 <div class="card-body">
                     <h4 class="card-title">{{'Dashboard.ShippingRequests' | translate}} </h4>
                     <p class="card-category">{{'Dashboard.Youcanviewrequests' | translate}} <a
-                            [routerLink]="['/canater-management/canater-request-list']">{{'Dashboard.ReadMore' |
+                            [routerLink]="['/base-management/base-request-list']">{{'Dashboard.ReadMore' |
                             translate}}</a> </p>
                 </div>
                 <div class="card-footer">
                     <div class="stats">
                         <i class="material-icons">{{'Dashboard.TotalShippingRequests' | translate}} <h5>
-                                {{canaterRequestTotalDetails.bookingRequests}}</h5></i>
+                                {{baseRequestTotalDetails.bookingRequests}}</h5></i>
                     </div>
                 </div>
             </div>
@@ -124,13 +124,13 @@
                 <div class="card-body">
                     <h4 class="card-title">{{'Dashboard.RegisterationRequests' | translate}}</h4>
                     <p class="card-category">{{'Dashboard.Youcanviewrequests' | translate}} <a
-                            [routerLink]="['/canater-management/canater-request-list']">{{'Dashboard.ReadMore' |
+                            [routerLink]="['/base-management/base-request-list']">{{'Dashboard.ReadMore' |
                             translate}}</a> </p>
                 </div>
                 <div class="card-footer">
                     <div class="stats">
                         <i class="material-icons">{{'Dashboard.TotalRegisterationRequests' | translate}}<h5>
-                                {{canaterRequestTotalDetails.registerationRequests}}</h5></i>
+                                {{baseRequestTotalDetails.registerationRequests}}</h5></i>
                     </div>
                 </div>
             </div>
@@ -167,43 +167,43 @@
                                 <span class="nav-tabs-title">Request Status: </span>
                                 <ul class="nav nav-tabs" data-tabs="tabs">
                                     <li class="nav-item">
-                                        <a mat-button class="nav-link" (click)="getRequests(canaterRequestStatusEnum.InProgress)"  data-toggle="tab">
+                                        <a mat-button class="nav-link" (click)="getRequests(baseRequestStatusEnum.InProgress)"  data-toggle="tab">
                                             <i class="material-icons"></i> Inprogress
                                             <div class="ripple-container"></div>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a mat-button class="nav-link" (click)="getRequests(canaterRequestStatusEnum.WaitingForCorrection)" data-toggle="tab">
+                                        <a mat-button class="nav-link" (click)="getRequests(baseRequestStatusEnum.WaitingForCorrection)" data-toggle="tab">
                                             <i class="material-icons"></i> Waiting For Correction
                                             <div class="ripple-container"></div>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a mat-button class="nav-link" (click)="getRequests(canaterRequestStatusEnum.Approved)"data-toggle="tab">
+                                        <a mat-button class="nav-link" (click)="getRequests(baseRequestStatusEnum.Approved)"data-toggle="tab">
                                             <i class="material-icons"></i> Approved
                                             <div class="ripple-container"></div>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a mat-button class="nav-link" (click)="getRequests(canaterRequestStatusEnum.WaitingForBL)" data-toggle="tab">
+                                        <a mat-button class="nav-link" (click)="getRequests(baseRequestStatusEnum.WaitingForBL)" data-toggle="tab">
                                             <i class="material-icons"></i> Waiting For BL
                                             <div class="ripple-container"></div>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a mat-button class="nav-link" (click)="getRequests(canaterRequestStatusEnum.WaitingForPaymnet)" data-toggle="tab">
+                                        <a mat-button class="nav-link" (click)="getRequests(baseRequestStatusEnum.WaitingForPaymnet)" data-toggle="tab">
                                             <i class="material-icons"></i> Waiting For Paymnet
                                             <div class="ripple-container"></div>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a mat-button class="nav-link" (click)="getRequests(canaterRequestStatusEnum.WaitingForOriginalBL)" data-toggle="tab">
+                                        <a mat-button class="nav-link" (click)="getRequests(baseRequestStatusEnum.WaitingForOriginalBL)" data-toggle="tab">
                                             <i class="material-icons"></i> Waiting For Original BL
                                             <div class="ripple-container"></div>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a mat-button class="nav-link" (click)="getRequests(canaterRequestStatusEnum.Closed)" data-toggle="tab">
+                                        <a mat-button class="nav-link" (click)="getRequests(baseRequestStatusEnum.Closed)" data-toggle="tab">
                                             <i class="material-icons"></i> Closed
                                             <div class="ripple-container"></div>
                                         </a>
@@ -260,7 +260,7 @@
                         <i class="fas fa-truck iconSize"></i>
                     </div>
                     <div class="text">
-                        <h2>{{canaterRequestTotalDetails.totalApproved}}</h2>
+                        <h2>{{baseRequestTotalDetails.totalApproved}}</h2>
                         <span>{{'dashboard.TotalRequestApproved' |translate}}</span>
                     </div>
                 </div>
@@ -278,7 +278,7 @@
                         <i class="fas fa-truck iconSize"></i>
                     </div>
                     <div class="text">
-                        <h2>{{canaterRequestTotalDetails.totalInProgress}}</h2>
+                        <h2>{{baseRequestTotalDetails.totalInProgress}}</h2>
                         <span>{{'dashboard.TotalRequestInProgress' |translate}}</span>
                     </div>
                 </div>
@@ -297,7 +297,7 @@
                         <i class="fas fa-truck iconSize"></i>
                     </div>
                     <div class="text">
-                        <h2>{{canaterRequestTotalDetails.totalClosed}}</h2>
+                        <h2>{{baseRequestTotalDetails.totalClosed}}</h2>
                         <span>{{'dashboard.TotalRequestClosed' |translate}} </span>
                     </div>
                 </div>

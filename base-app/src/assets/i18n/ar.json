@@ -54,8 +54,8 @@
     "of": "من",
     "entries": "المدخلات",
     "Search": "بحث",
-    "Canater": "كانتير",
-    "PleaseLetUsKnowIfYouWantToRequestACanater": "من فضلك أخبرنا إذا كنت تريد أن تطلب طلب سيارة",
+    "Base": "كانتير",
+    "PleaseLetUsKnowIfYouWantToRequestABase": "من فضلك أخبرنا إذا كنت تريد أن تطلب طلب سيارة",
     "Ok": "موافق",
     "back": "رجوع"
   },
@@ -183,7 +183,7 @@
     "CompanyType": "نوع الشركة",
     "SelectCompanyType": "اختر نوع الشركة",
     "WelcomeTo":"مرحباً بك في",
-    "Canater":"كانتير",
+    "Base":"كانتير",
     "ReadMore":"قراءة المزيد",
     "forgetPasswordMessage":"تم إرسال الرابط ، يرجى التحقق من بريدك الإلكتروني لإعادة تعيين كلمة المرور الخاصة بك."
   },
